@@ -19,15 +19,17 @@ http://ec2-34-212-102-198.us-west-2.compute.amazonaws.com/graphiql
 * How many currencies in the system?
 * How many types do we have in the system?
 
+## Exercise part 2
 
-## How to install
+
+### How to install
 
 - `git clone git@github.com:leanjscom/thinking-in-graphql.git`
 - `cd thinking-in-graphql`
 - `yarn install` or `npm install`
 - `yarn start` or `npm start`
 
-## Exercise part 2
+### Questions exercise part 2
 
 1. Fix the start script in package.json
 2. In src/server.js add graphqlExpress using https://github.com/apollographql/apollo-server#express.
