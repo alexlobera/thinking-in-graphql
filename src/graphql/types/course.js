@@ -46,7 +46,7 @@ const CourseType = new GraphQLObjectType({
       description: ''
     },
     currency: {
-      type: GraphQLString,
+      type: new GraphQLNonNull(CurrencyTypeEnum),
       description: ''
     },
     vouchers: {
