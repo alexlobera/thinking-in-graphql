@@ -9,16 +9,16 @@ import './mongoose'
 
 const app = express()
 
-app.use('/graphql', bodyParser.json(), (req, res) => {
-  graphqlExpress({
-    schema,
-    debug: process.env.NODE_ENV !== 'prod'
-  })(req, res)
-})
+// ADD QUESTION 2 HERE
+// https://github.com/apollographql/apollo-server#express
 
-app.use('/graphiql', graphiqlExpress({
-  endpointURL: '/graphql',
-}))
+
+// UNCOMMENT THE NEXT CODE ONCE YOU ARE DONE WITH QUESTION 2 AND YOU SHOULD SEE GRAPHIQL
+// IF YOU GO TO http://localhost:8888/graphiql
+
+// app.use('/graphiql', graphiqlExpress({
+//   endpointURL: '/graphql',
+// }))
 
 app.use('/public', express.static('data'))
 

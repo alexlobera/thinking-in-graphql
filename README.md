@@ -29,6 +29,10 @@ http://ec2-34-212-102-198.us-west-2.compute.amazonaws.com/graphiql
 
 ## Exercise part 2
 
+1. Fix the start script in package.json
+2. In src/server.js add graphqlExpress using https://github.com/apollographql/apollo-server#express
+
+
 ## Further reading
 
 - http://graphql.org/learn/thinking-in-graphs/

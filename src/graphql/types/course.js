@@ -49,16 +49,6 @@ const CourseType = new GraphQLObjectType({
       type: GraphQLString,
       description: ''
     },
-    vouchers: {
-      type: voucherConnection,
-      resolve: (_, args) => {
-        const query = { course_id: _._id }
-        const orderBy = { cursorField: 'start_date', direction: 1 }
-
-        return mrResolve(args, voucherModel, query, orderBy)
-      },
-      description: ''
-    },
     start_date: {
       type: new GraphQLNonNull(GraphQLDateTime),
       description: ''

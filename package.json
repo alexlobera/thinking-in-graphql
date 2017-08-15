@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=dev node_modules/.bin/nodemon -- node_modules/.bin/babel-node src/server.js",
+    "start": "cross-env NODE_ENV=dev node_modules/.bin/nodemon -- node_modules/.bin/babel-node src/?.js",
     "serve": "cross-env NODE_ENV=prod node ./dist/server.js",
     "clean-dist": "node_modules/.bin/rimraf ./dist && mkdir ./dist",
     "build-server": "cross-env NODE_ENV=prod node_modules/.bin/babel src --out-dir dist",
