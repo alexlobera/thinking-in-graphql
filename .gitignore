@@ -38,3 +38,6 @@ jspm_packages
 
 #graphql generated data
 data
+
+#build
+dist/

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=dev node_modules/.bin/nodemon -- node_modules/.bin/babel-node src/?.js",
-    "serve": "cross-env NODE_ENV=prod node ./dist/server.js",
+    "start": "cross-env NODE_ENV=dev node_modules/.bin/nodemon -- node_modules/.bin/babel-node src/server.js",
+    "serve": "cross-env NODE_ENV=prod node_modules/.bin/forever start -a ./dist/server.js",
     "clean-dist": "node_modules/.bin/rimraf ./dist && mkdir ./dist",
     "build-server": "cross-env NODE_ENV=prod node_modules/.bin/babel src --out-dir dist",
     "build": "npm run clean-dist && npm run build-server",
@@ -20,6 +20,7 @@
     "body-parser": "^1.17.1",
     "config": "^1.25.1",
     "express": "^4.15.2",
+    "forever": "^0.15.3",
     "graphql-iso-date": "^3.1.0",
     "graphql-relay": "^0.5.1",
     "graphql-server-express": "^1.1.0",

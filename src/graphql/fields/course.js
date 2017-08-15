@@ -25,10 +25,7 @@ const CourseFields = {
     type: CourseType,
     description: 'Get a specific course.',
     args: {
-      id: {
-        type: new GraphQLNonNull(GraphQLID),
-        description: 'The id of the course',
-      },
+
     },
     resolve: (_, args) => getCourse(args),
   },

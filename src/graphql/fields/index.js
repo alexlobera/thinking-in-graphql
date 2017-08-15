@@ -7,7 +7,6 @@ const RootQueryType = new GraphQLObjectType({
   name: 'RootQueryType',
   fields: {
     ...CourseFields,
-    ...VoucherFields,
   }
 })
 

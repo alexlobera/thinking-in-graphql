@@ -31,7 +31,9 @@ http://ec2-34-212-102-198.us-west-2.compute.amazonaws.com/graphiql
 
 1. Fix the start script in package.json
 2. In src/server.js add graphqlExpress using https://github.com/apollographql/apollo-server#express
-
+3. The field currency in Course type (src/graphql/types/course) should be of type CurrencyTypeEnum and should be non null.
+4. The course field in src/graphql/fields/course should have the id of the course as an argument
+5. Include the Voucher queries into src/graphql/fields/index.js
 
 ## Further reading
 
