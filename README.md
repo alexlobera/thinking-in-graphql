@@ -1,12 +1,12 @@
 Thinking in GraphQL exercise
 =========================
 
-This repo contains some exercise to help you learn the following:
+This repo contains some exercises to help you learn the following:
 
 - Thinking in Graphs
 - Setting up a GraphQL server using Express
 - GraphQL queries
-- Pagination using Relay Cursor Connections specification
+- Pagination using the Relay Cursor Connections specification
 
 ## Exercise part 1
 
@@ -14,7 +14,7 @@ http://ec2-34-212-102-198.us-west-2.compute.amazonaws.com/graphiql
 
 * Query a list of courses
 * Query a single course by id
-* Query a single course by $id  (id is a variable)
+* Query a single course by $id  ($id is a variable)
 * How many courses in the system?
 * How many currencies in the system?
 * How many types do we have in the system?
