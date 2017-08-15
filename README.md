@@ -19,15 +19,27 @@ http://ec2-34-212-102-198.us-west-2.compute.amazonaws.com/graphiql
 * How many currencies in the system?
 * How many types do we have in the system?
 
+## Exercise part 2
 
-## How to install
+
+### How to install
 
 - `git clone git@github.com:leanjscom/thinking-in-graphql.git`
 - `cd thinking-in-graphql`
 - `yarn install` or `npm install`
 - `yarn start` or `npm start`
 
-## Exercise part 2
+### Questions exercise part 2
+
+1. Fix the start script in package.json
+2. In src/server.js add graphqlExpress using https://github.com/apollographql/apollo-server#express.
+3. The field currency in Course type (src/graphql/types/course) should be of type CurrencyTypeEnum and should be non null.
+4. The course field in src/graphql/fields/course should have the id of the course as an argument
+5. Include the Voucher queries into src/graphql/fields/index.js
+6. Finish the implementation in the vouchers field in src/graphql/fields/voucher.js
+7. Fix the resolver in the voucher field in src/graphql/fields/voucher.js
+8. The voucher type (src/graphql/types/voucher.js) should have a field called course that should return the course of that voucher. You should be able to do this https://goo.gl/ffGsDo
+9. The course type (src/graphql/types/course.js) should have a field called vouchers that should resolve to a relay connection with all the vouchers of that course. You should be able to do this https://goo.gl/PfRF4K
 
 ## Further reading
 
