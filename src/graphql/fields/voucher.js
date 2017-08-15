@@ -13,15 +13,6 @@ const voucherConnection = mrType('voucher', VoucherType)
 const VoucherFields = {
   vouchers: {
     type: voucherConnection,
-    args: {
-      ...connectionArgs,
-    },
-    resolve: (_, args) => {
-      const query = {}
-      const orderBy = { cursorField: 'created_at', direction: -1 }
-
-      return mrResolve(args, voucherModel, query, orderBy)
-    },
   },
   voucher: {
     type: VoucherType,
@@ -32,7 +23,7 @@ const VoucherFields = {
         description: 'The id of the voucher',
       },
     },
-    resolve: (_, args) => getVoucher(args),
+    resolve: () => getVoucher(args),
   },
 }
 
