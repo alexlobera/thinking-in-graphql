@@ -53,6 +53,7 @@ http://ec2-34-212-102-198.us-west-2.compute.amazonaws.com/graphiql
 - https://facebook.github.io/relay/graphql/connections.htm
 - https://dev-blog.apollodata.com/introducing-launchpad-the-graphql-server-demo-platform-cc4e7481fcba
 - https://dev-blog.apollodata.com/
+- http://dev.apollodata.com
 
 ## License
 
