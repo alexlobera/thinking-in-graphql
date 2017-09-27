@@ -10,7 +10,7 @@ This repo contains some exercise to help you learn the following:
 
 ## Exercise part 1
 
-http://ec2-34-212-102-198.us-west-2.compute.amazonaws.com/graphiql
+http://ec2-35-176-58-126.eu-west-2.compute.amazonaws.com:8080/graphiql
 
 * Query a list of courses
 * Query a single course by id
