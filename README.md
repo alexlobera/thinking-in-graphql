@@ -43,6 +43,7 @@ http://ec2-35-176-58-126.eu-west-2.compute.amazonaws.com:8080/graphiql
 
 ## Further reading
 
+- http://graphql.org/learn/
 - http://graphql.org/learn/thinking-in-graphs/
 - https://dev-blog.apollodata.com/graphql-vs-rest-5d425123e34b
 - https://dev-blog.apollodata.com/graphql-explained-5844742f195e
