@@ -21,11 +21,18 @@ http://ec2-35-176-58-126.eu-west-2.compute.amazonaws.com:8080/graphiql
 
 ## Exercise part 2
 
+### Before Install
+
+- Make sure you have `mongodb` available & running
+- you can [Install mongodb](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/#install-mongodb-community-edition-with-homebrew) in your mac through `brew`
 
 ### How to install
 
 - `git clone git@github.com:leanjscom/thinking-in-graphql.git`
 - `cd thinking-in-graphql`
+- create folders needed for your local mongodb database: `mkdir data && mkdir data/db`
+- `mongod --dbpath=data/db`
+- open in a separate shell the project folder and execute the following commands
 - `yarn install` or `npm install`
 - `yarn start` or `npm start`
 
