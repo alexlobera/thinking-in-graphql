@@ -3,13 +3,14 @@ import express from 'express'
 import { graphqlExpress, graphiqlExpress } from 'graphql-server-express'
 import bodyParser from 'body-parser'
 import config from 'config'
+import cors from 'cors'
 
 import schema from './graphql'
 import './mongoose'
 
 const app = express()
 
-app.use('/graphql', bodyParser.json(), (req, res) => {
+app.use('/graphql', cors(), bodyParser.json(), (req, res) => {
   graphqlExpress({
     schema,
     debug: process.env.NODE_ENV !== 'prod'
